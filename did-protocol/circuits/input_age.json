@@ -1,0 +1,17 @@
+{
+  "_comment": "did-protocol/circuits/input_age.json — Sample input for AgeProof.circom",
+  "_note": "NEVER commit a real input.json with a real secret to git. This is a test example only.",
+
+  "___PRIVATE_INPUTS___": "These stay on the user's device — never sent anywhere",
+  "birthYear":  "1995",
+  "birthMonth": "7",
+  "birthDay":   "14",
+  "secret":     "12345678901234567890123456789012",
+
+  "___PUBLIC_INPUTS___": "These go on-chain as public signals",
+  "currentYear":  "2026",
+  "currentMonth": "5",
+  "currentDay":   "18",
+  "minAge":       "18",
+  "claimType":    "1"
+}
