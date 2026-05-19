@@ -1,0 +1,39 @@
+{
+  "_comment": "did-protocol/circuits/input_identity.json",
+  "_warning": "NEVER commit real personal data here. Use dummy values for testing only.",
+
+  "_PRIVATE_INPUTS_stay_on_device": {
+    "idNumber":         "8374619283746192",
+    "firstName":        "73849201948203718",
+    "lastName":         "92830174920183746",
+    "nationalityCode":  "91",
+    "documentType":     "1",
+    "expiryYear":       "2030",
+    "expiryMonth":      "6",
+    "issuingAuthority": "11223344556677889",
+    "secret":           "99887766554433221100998877665544"
+  },
+
+  "_PUBLIC_INPUTS_go_onchain": {
+    "currentYear":      "2026",
+    "currentMonth":     "5",
+    "allowedDocTypes":  "7",
+    "claimType":        "2",
+    "issuerCommitment": "0"
+  },
+
+  "idNumber":         "8374619283746192",
+  "firstName":        "73849201948203718",
+  "lastName":         "92830174920183746",
+  "nationalityCode":  "91",
+  "documentType":     "1",
+  "expiryYear":       "2030",
+  "expiryMonth":      "6",
+  "issuingAuthority": "11223344556677889",
+  "secret":           "99887766554433221100998877665544",
+  "currentYear":      "2026",
+  "currentMonth":     "5",
+  "allowedDocTypes":  "7",
+  "claimType":        "2",
+  "issuerCommitment": "0"
+}
