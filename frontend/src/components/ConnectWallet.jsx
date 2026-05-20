@@ -1,8 +1,31 @@
-import { useState, useEffect, useCallback } from "react";
+ import { useState, useEffect, useCallback } from "react";
 import { ethers } from "ethers";
 
-const end = end-1;
-// contract will be ended here 
+/*
+ * ConnectWallet.jsx
+ * ─────────────────────────────────────────────────────────────────────────
+ * Folder: did-protocol/frontend/src/components/ConnectWallet.jsx
+ *
+ * Handles:
+ *  - MetaMask / injected wallet detection
+ *  - Wallet connection + account switching
+ *  - Network detection + switching to Sepolia testnet
+ *  - Disconnection
+ *  - Passes { provider, signer, address, chainId } up via onConnect callback
+ *
+ * Props:
+ *  onConnect(walletData)  called when wallet connects successfully
+ *                         walletData = { provider, signer, address, chainId }
+ *  onDisconnect()         called when wallet disconnects
+ *  className              optional extra CSS class on root element
+ *
+ * Usage:
+ *  <ConnectWallet
+ *    onConnect={(data) => setWallet(data)}
+ *    onDisconnect={() => setWallet(null)}
+ *  />
+ * ─────────────────────────────────────────────────────────────────────────
+ */
 
 // ── CONSTANTS ────────────────────────────────────────────────────────────────
 const SEPOLIA_CHAIN_ID  = "0xaa36a7";   // 11155111 in hex
